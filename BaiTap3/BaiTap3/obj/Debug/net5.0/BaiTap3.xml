@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaiTap3</name>
+    </assembly>
+    <members>
+        <member name="M:BaiTap3.Controllers.DiemController.ThemLoaiDiem(Share.Model.Diem)">
+            <summary>
+            Thêm loại điểm
+            </summary>
+            <param name="diem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.DiemController.GetAllLoaiDiem">
+            <summary>
+            hiển thị các loại điểm
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.DiemController.SuaThongTin(System.Int32,Share.Model.Diem)">
+            <summary>
+            sửa loại điểm môn học
+            </summary>
+            <param name="id"></param>
+            <param name="diem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.DiemController.Xoa(System.Int32)">
+            <summary>
+            xóa loại điểm môn học
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.GetAllGiangVien">
+            <summary>
+            hiển thị danh sách tất cả giảng viên
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.PostGiangVien(Share.Model.GiangVien)">
+            <summary>
+            thêm giảng viên
+            </summary>
+            <param name="giangvien"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.SuaThongTin(System.Int32,Share.Model.GiangVien)">
+            <summary>
+            sửa giảng viên
+            </summary>
+            <param name="id"></param>
+            <param name="hocvien"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.XoaGiangVien(System.Int32)">
+            <summary>
+            Xóa Giảng Viên
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.TimGiangVien(System.String)">
+            <summary>
+            Tìm kiếm giảng viên
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.DoiPass(Share.Model.ViewModel.UpDatePassWord)">
+            <summary>
+            giảng viên đổi mật khẩu
+            </summary>
+            <param name="viewdoipass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.TraLuong(Share.Model.Luong)">
+            <summary>
+            tạo phiếu lương cho nhân viên
+            </summary>
+            <param name="luong"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.GiangVienController.GiangVienLogin(Share.Model.ViewModel.ViewLogin)">
+            <summary>
+            giảng viên đăng nhập
+            </summary>
+            <param name="viewLogin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.SendEmail(System.String)">
+            <summary>
+            Gửi Mã OTP về email
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.CheckOtp(Share.Model.ViewModel.CheckMaOTP)">
+            <summary>
+            kiểm tra mã OTP đúng ko
+            </summary>
+            <param name="checkMaOTP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.ResetPass(Share.Model.ViewModel.ResetPastWord)">
+            <summary>
+            đổi lại mật khẩu
+            </summary>
+            <param name="resetPassWord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.GetAllHocVien">
+            <summary>
+            hiển thị tất cả danh sách học viên
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.PostHocVien(Share.Model.HocVien)">
+            <summary>
+            thêm học viên
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.SuaThongTin(System.Int32,Share.Model.HocVien)">
+            <summary>
+            sửa thông tin học viên
+            </summary>
+            <param name="id"></param>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.XoaHocVien(System.Int32)">
+            <summary>
+            xóa học viên
+            </summary>
+            <param name="id"></param>
+            <param name="hoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.TimHocVien(System.String)">
+            <summary>
+            Tìm Kiếm Học Viên
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.HocVienController.DoiPass(Share.Model.ViewModel.UpDatePassWord)">
+             <summary>
+            học viên thay đổi mật khẩu
+             </summary>
+             <param name="viewdoipass"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.KhoaDaoTaoController.PostKhoaDaoTao(Share.Model.KhoaDaoTao)">
+            <summary>
+            Thêm Khóa đào tạo
+            </summary>
+            <param name="khoadaotao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.KhoaDaoTaoController.GetAllKhoaDaotao">
+            <summary>
+            hiển thị khóa đào tạo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.KhoaDaoTaoController.SuaThongTin(System.Int32,Share.Model.KhoaDaoTao)">
+            <summary>
+            sửa khóa đào tạo
+            </summary>
+            <param name="id"></param>
+            <param name="khoaDaoTao"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.KhoaDaoTaoController.Xoa(System.Int32)">
+            <summary>
+            xóa khóa
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichHocController.GetAllLichHoc">
+            <summary>
+            hiển thị lịch học
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichHocController.PostLichHoc(Share.Model.LichHoc)">
+            <summary>
+            thêm lịch học
+            </summary>
+            <param name="lichhoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichHocController.SuaThongTin(System.Int32,Share.Model.LichHoc)">
+            <summary>
+            sửa lịch học
+            </summary>
+            <param name="id"></param>
+            <param name="lichhoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichHocController.XoaLichHoc(System.Int32)">
+            <summary>
+            Xóa lịch học
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichNghiController.GetAllLichnghi">
+            <summary>
+            hiển thị danh sách các lịch nghỉ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichNghiController.PostLichNghi(Share.Model.LichNghi)">
+            <summary>
+            Thêm lịch nghỉ
+            </summary>
+            <param name="lichNghi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichNghiController.SuaThongTin(System.Int32,Share.Model.LichNghi)">
+            <summary>
+            sửa lịch nghỉ
+            </summary>
+            <param name="id"></param>
+            <param name="lichNghi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichNghiController.XoaLichNghi(System.Int32)">
+            <summary>
+            Xóa Lịch Nghỉ
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LichNghiController.Tim(System.String)">
+            <summary>
+            Tìm kiếm lịch nghỉ
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.PostLopHoc(Share.Model.LopHoc)">
+            <summary>
+            Thêm Lớp Học
+            </summary>
+            <param name="lopHoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.PostHocVienVaoLopHoc(Share.Model.Lop_HocVien)">
+            <summary>
+            Học viên đăng ký vào lớp học
+            </summary>
+            <param name="lop_HocVien"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.AddPointAsync(Share.Model.HocVien_Diem)">
+            <summary>
+            Thêm điểm cho 1 học viên
+            </summary>
+            <param name="hv_diem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.AddListPointAsync(Share.Model.ViewModel.ViewThemDiems)">
+            <summary>
+            thêm điểm cho cả lớp học
+            </summary>
+            <param name="themdiem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.GetPointsAsync(System.Int32)">
+            <summary>
+            xem điểm theo môn học
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.LopHocController.GetStudentByClassAsync(System.Int32)">
+            <summary>
+            hiển thị ds học viên trong lớp học
+            </summary>
+            <param name="malop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.MonHocController.GetAllMonHoc">
+            <summary>
+            Hiển thị tất cả môn học
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.MonHocController.PostMonHoc(Share.Model.MonHoc)">
+            <summary>
+            thêm môn học
+            </summary>
+            <param name="monhoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.MonHocController.SuaMonHoc(System.Int32,Share.Model.MonHoc)">
+            <summary>
+            Sửa môn học
+            </summary>
+            <param name="id"></param>
+            <param name="monhoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.MonHocController.XoaMonHoc(System.Int32)">
+            <summary>
+            xóa môn học
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.MonHocController.TimMonHoc(System.String)">
+            <summary>
+            tìm kiếm môn học
+            </summary>
+            <param name="search"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.Role_QuyenController.UpdateOrAddRole_QuyenAsync(System.Collections.Generic.List{Share.Model.Role_QUyen})">
+            <summary>
+            thêm và xóa quyền
+            </summary>
+            <param name="Role_Quyens"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.Role_QuyenController.GetRole_QuyensAsync(System.Int32)">
+            <summary>
+            hiển thị role đang có
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.Role_QuyenController.GetQuyenRoleNotHaveAsync(System.Int32)">
+            <summary>
+            hiển thị role chưa có
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.ThuHocPhiController.PostHocVien(Share.Model.ThuHocPhi)">
+            <summary>
+            Add thu học phí
+            </summary>
+            <param name="thuHocPhi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaiTap3.Controllers.ToKenController.Post(Share.Model.ViewModel.ViewLogin)">
+            <summary>
+            đăng nhập học viên
+            </summary>
+            <param name="viewLogin"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
